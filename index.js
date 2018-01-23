@@ -41,6 +41,9 @@ var ErrorCodes = {
     "WS_PEERMSG": 0x4007,
     "WS_CONTACT_SESSION": 0x4008,
 
+    "UI_CONNECT_TONETWORK": 0x8001,
+    "UI_ON_PEERMSG": 0x8002,
+
     "MAX_ERROR_CODE": 0xFFFF
 };
 
