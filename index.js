@@ -19,19 +19,39 @@ Copyright (C) 2017 The Streembit software development team
 
 */
 
+/*
+
+Error code prefix explanation
+
+0x0 = system error codes used by the CLI application
+0x1 = even related errors used by the utils application
+0x2 = database related errors generated primarily by the streembit-db application
+0x3 = HTTP transport related errors
+0x4 = WebSocket transport errors
+0x5 = reserved
+0x6 = reserved
+0x7 = reserved
+0x8 = UI errors
+0x81 = reserved
+0x82 = UI WebRTC errors 
+
+*/
+
 var ErrorCodes = {
     "SYSTEM": 0x0001,
     "BADPARAM":0x0002,
     "INVALID_PAYLOAD": 0x0003,
 
-    "EVENT_ERROR": 0x1000,
+    "EVENT": 0x1000,
 
-    "HTTP_ERROR": 0x3000,
+    "DATABASE": 0x2000,
+
+    "HTTP": 0x3000,
     "HTTP_HANDLEREQUEST": 0x3001,
     "HTTP_NOWSINFO": 0x3002,
     "HTTP_NOWSPEERS": 0x3003,
 
-    "WS_ERROR": 0x4000,
+    "WS": 0x4000,
     "WS_ONSEND": 0x4001,
     "WS_PING": 0x4002,
     "WS_REGISTER": 0x4003,
