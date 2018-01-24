@@ -62,6 +62,7 @@ var ErrorCodes = {
 
     "UI_CONNECT_TONETWORK": 0x8001,
     "UI_ON_PEERMSG": 0x8002,
+    "UI_FINDCONTACT": 0x8003,
 
     "UI_WEBRTC_FILE": 0x8200,
     "UI_WEBRTC_DATA": 0x8201,
