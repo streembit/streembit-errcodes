@@ -59,6 +59,7 @@ var ErrorCodes = {
     "WS_DHTGET": 0x4005,
     "WS_PEERMSG": 0x4006,
     "WS_CONTACT_SESSION": 0x4007,
+    "WS_PEERCOMM": 0x4008,
 
     "UI_CONNECT_TONETWORK": 0x8001,
     "UI_ON_PEERMSG": 0x8002,
