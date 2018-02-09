@@ -28,7 +28,7 @@ Error code prefix explanation
 0x2 = database related errors generated primarily by the streembit-db application
 0x3 = HTTP transport related errors
 0x4 = WebSocket transport errors
-0x5 = reserved
+0x5 = Blockchain
 0x6 = reserved
 0x7 = reserved
 0x8 = UI errors
@@ -38,6 +38,8 @@ Error code prefix explanation
 */
 
 var ErrorCodes = {
+    "SUCCESS": 0x0000,
+
     "SYSTEM": 0x0001,
     "BADPARAM":0x0002,
     "INVALID_PAYLOAD": 0x0003,
@@ -62,9 +64,25 @@ var ErrorCodes = {
     "WS_PEERCOMM": 0x4008,
 
     "BC_ERROR": 0x5000,
+    "BC_INVALID_INPUTS": 0x5010,
+    "BC_INVALID_OUTPUTS": 0x500a,
+    "BC_INVALID_INPUTDATA": 0x500b,
+    "BC_INVALID_INPUTTYPE": 0x500c,
+    "BC_INVALID_TXHASH": 0x5011,
+    "BC_INVALID_TXRCPTKEY": 0x5012,
+    "BC_INVALID_VOUT": 0x5013,
+    "BC_INVALID_TXPARAM": 0x5050,
     "BC_INVALID_TXHEX": 0x5100,
     "BC_TOBUFFER_ERR": 0x5101,
     "BC_INVALIDTXFIELDS": 0x5102,
+    "BC_INVALIDTXTYPE": 0x5103,
+    "BC_ADDINPUT": 0x5104,
+    "BC_INVALID_OUTPUTVALUE": 0x5130,
+    "BC_INVALID_SCRIPTSIG_KEY": 0x5150,
+    "BC_INVALID_SCRIPTSIG_PAYLOAD": 0x5151,
+    
+    "BC_INVALID_FORGPARAM": 0x5500,
+    "BC_INVALID_NODEINFO": 0x5501,
 
     "UI_CONNECT_TONETWORK": 0x8001,
     "UI_ON_PEERMSG": 0x8002,
