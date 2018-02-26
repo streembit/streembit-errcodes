@@ -125,6 +125,7 @@ var ErrorCodes = {
     "UI_FINDCONTACT": 0x8003,
  
     "UI_ACCOUNTINIT": 0x8020,
+    "UI_ACCOUNTRESTORE": 0x8021,
 
     "UI_WEBRTC_FILE": 0x8200,
     "UI_WEBRTC_DATA": 0x8201,
