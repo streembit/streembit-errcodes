@@ -1,2 +1,2 @@
-# streembit-errs
+# streembit-errcodes
 Streembit error codes
